@@ -1,7 +1,19 @@
-p {
+ol {
 	color: darkviolet;
 	background: yellow;
 	font-weight: bold;
-	text-align: center;
-	}
+	text-align: left;
+}
+
+ul{
+	color: darkviolet;
+	background: yellow;
+	font-weight: bold;
+	text-align: left;
+
+
+	
+}
+
+
 	
