@@ -19,7 +19,7 @@ h1 {
 /* -----------------------------------------
     SELECT ALL SQUARES IN THE ARRAY
     ---------------------------------------*/
-.container .squares:nth-child(-n+4) {
+.container .squares:nth-child(-n+4) p{
         background-image: url("../images/icons/happyface.png")
         color: #fff;
         float: left;
