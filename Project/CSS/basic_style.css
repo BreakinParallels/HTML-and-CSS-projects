@@ -20,7 +20,7 @@ h1 {
     SELECT ALL SQUARES IN THE ARRAY
     -----------------------------------------------*/
 .container .squares:nth-child(-n+4) p{
-        background-image: url("../Images/Icons/happyface.png")
+        background-image: url("../Images/Icons/happyface1.png")
         color: #fff;
         float: left;
         width: 100px;
@@ -29,13 +29,14 @@ h1 {
         border: 1px solid black;
         border-radius:25%;
         cursor: pointer;
+        transition: transform .5s ease-in-out;
 }
 
 /*----------------------------------------------------
     SELECT ALL SQUARES PARAGRAPHS IN THE ARRAY
 -----------------------------------------------------*/
 .squares:nth-child(-n+4) p {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 1.5em;
     font-weight: 900;
     text-align: center;
@@ -63,10 +64,15 @@ h1 {
     }
 
     /* -------------------------------------------------------
-        HOVER EFFECTS
+        HOVER, TRANSLATE, & TRANSFORM EFFECTS
     ---------------------------------------------------------*/
     .container .squares:nth-child(-n+4):hover {
-        background-image: url("../Images/Icons/happyface.png");
+        background-image: url("../Images/Icons/happyface2.png");
+        transform: scale(.5);
+        animation-name: race;
+        animation-duration: 2.5s;
+        animation-iteration-count: infinite;
+        animation-timing-function: cubic-bezier(2.5,.2,.3,2);
     }
 
     .squares:nth-child(1):hover {
@@ -83,4 +89,17 @@ h1 {
 
     .squares:nth-child(4):hover {
         background: #77b800;
+    }
+
+    /*---------------------------------------------------------
+        ANIMATION EFFECT
+    ---------------------------------------------------------*/
+    @keyframes race {
+        0%, 100% {
+            transform: translateY(0px);
+            background-image: url("../Images/Icons/happyface1.png")
+        }
+        50% {
+            transform: translateY(330px);
+        }
     }
