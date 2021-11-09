@@ -42,10 +42,10 @@ p {
 	left: 0;
 	padding-left: 20px;
 	padding-right: 20px;
-	justify-content: center; /* For centering text inside .photo */
+	justify-content: center; /* For centering text inside .photo container*/
 	align-items: center;
 	background: rgba(0,0,0, .5);
-	
+}
 .white-head {
 	color: #C9BDAA;
 	margin-top: 5%;
