@@ -15,7 +15,16 @@ html {
     -ma-text-size-size-adjust: 100%;
 }
 
-
 .myForm input[type="text"]{
-    width:200px;
+    /*width*/
+    width:300px;    
+    /*margin*/
+    margin:0px auto
+    /*Border*/
+    border-left: 1px solid #8D8D8D;
+    border-right: 1px solid #8D8D8D;
+    /*Border radius*/
+    border-radius: 7px;
+
+
 }
